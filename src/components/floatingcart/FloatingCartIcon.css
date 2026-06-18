@@ -1,0 +1,58 @@
+@media (max-width: 576px) {
+    .floating-cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color:  var(--main-redtext-color)  !important;
+      color: var(--main-whitetext-color)  !important;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+ 
+
+      }
+    }
+  
+  
+    .floating-cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color:  var(--main-redtext-color)  !important;
+      color: var(--main-whitetext-color)  !important;
+      padding: 15px;
+      border-radius: 50%;
+
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .floating-cart-icon .badge {
+      position: absolute;
+      right: -10px;
+      border-radius: 50%; /* Make the badge rounded */
+    }
+      
+      .item-count {
+        background-color: var(--main-whitetext-color)  !important;
+        color:  var(--main-redtext-color)  !important;
+        border-radius: 50%;
+        padding: 5px 10px;
+        margin-left: 5px;
+        font-weight: bold;
+      }
+      .icon .badge {
+        position: absolute;
+        right: -10px;
+        border-radius: 50%; /* Make the badge rounded */
+      }
+      
