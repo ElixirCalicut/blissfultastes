@@ -108,7 +108,7 @@ useEffect(() => {
               src={isValidImageFormat(item.image)? IMAGE_BASEURL + item.image:defaultImg}
               roundedCircle
               width={70}
-              height={60}
+              height={70}
               onLoad={handleImageLoad}
               onError={handleImageError}
             />
