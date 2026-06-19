@@ -16,7 +16,7 @@ import { ScrollMenu} from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import defaultImg from "../../../assets/images/images.png";
 import Divider from "../../../components/Divider/Divider";
-import mainlogo from "../../../assets/images/snooker.jpeg";
+import mainlogo from "../../../assets/images/blissful.jpeg";
 import "../../../styles/Custom.css";
 
 function Categories({ searchTerm }) {
