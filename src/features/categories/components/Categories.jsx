@@ -123,12 +123,33 @@ function Categories({ searchTerm }) {
             />
           )}
 
-          <Form.Label className="mt-1 bold" style={{
+          {/* <Form.Label className="mt-1 bold" style={{
 
-            fontSize: "10px",
+            fontSize: "8px",
           }}>
             <span className=" fs5 assistant-font">{item.name}</span>
-          </Form.Label>
+          </Form.Label> */}
+          <Form.Label
+  className="mt-1 bold"
+  style={{
+    display: "block",
+    width: "90px",
+    textAlign: "center",
+    margin: "0 auto",
+  }}
+>
+  <span
+    style={{
+      display: "block",
+      fontSize: "8px",
+      lineHeight: "10px",
+      whiteSpace: "normal",
+      wordBreak: "break-word",
+    }}
+  >
+    {item.name}
+  </span>
+</Form.Label>
 
         </Container>
       </div>
