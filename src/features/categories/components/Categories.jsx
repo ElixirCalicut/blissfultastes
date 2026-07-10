@@ -12,7 +12,7 @@ import Loader from "../../../components/loader/Loader";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../../../styles/Custom.css";
-import { ScrollMenu} from "react-horizontal-scrolling-menu";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import defaultImg from "../../../assets/images/images.png";
 import Divider from "../../../components/Divider/Divider";
@@ -36,11 +36,11 @@ function Categories({ searchTerm }) {
   }, [dispatch]);
 
   // Filter products when the search term changes
-useEffect(() => {
-  if (searchTerm) {
-    dispatch(setSearchQuery(searchTerm));
-  }
-}, [searchTerm, dispatch]);
+  useEffect(() => {
+    if (searchTerm) {
+      dispatch(setSearchQuery(searchTerm));
+    }
+  }, [searchTerm, dispatch]);
 
   const handleCategoryClick = (category) => {
     dispatch(selectCategory(category.strCategory));
@@ -91,7 +91,7 @@ useEffect(() => {
     const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff'];
     return validExtensions.some(ext => filename.toLowerCase().endsWith(ext));
   };
-  
+
 
   const renderCategories = () => {
     return categoryState.categories.map((item) => (
@@ -105,7 +105,7 @@ useEffect(() => {
         <Container className="circle">
           {item.image ? (
             <LazyLoadImage
-              src={isValidImageFormat(item.image)? IMAGE_BASEURL + item.image:defaultImg}
+              src={isValidImageFormat(item.image) ? IMAGE_BASEURL + item.image : defaultImg}
               roundedCircle
               width={70}
               height={90}
@@ -124,12 +124,12 @@ useEffect(() => {
           )}
 
           <Form.Label className="mt-1 bold" style={{
-    whiteSpace: "normal",
-    fontSize: "10px",
-  }}>
+
+            fontSize: "10px",
+          }}>
             <span className=" fs5 assistant-font">{item.name}</span>
           </Form.Label>
-          
+
         </Container>
       </div>
     ));
@@ -139,12 +139,12 @@ useEffect(() => {
     <Container fluid className="mt-1 mb-5">
       <Row className="text-center">
         <Col className="text-center">
-        <Image
-    src={mainlogo} // Replace with your logo path
-    style={{ width: "300px", height: "200px",   }} // Use 'contain' to fit the image
-    className="d-inline-block align-top rounded-circle carousel-inner" // Add rounded-circle if needed
-    alt="Logo"
-  />
+          <Image
+            src={mainlogo} // Replace with your logo path
+            style={{ width: "300px", height: "200px", }} // Use 'contain' to fit the image
+            className="d-inline-block align-top rounded-circle carousel-inner" // Add rounded-circle if needed
+            alt="Logo"
+          />
         </Col>
         <Divider text="CATEGORIES" />
 
