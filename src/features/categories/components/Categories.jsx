@@ -132,25 +132,15 @@ function Categories({ searchTerm }) {
           <Form.Label
   className="mt-1 bold"
   style={{
-    display: "block",
-    width: "90px",
+    width: "110px",
     textAlign: "center",
-    margin: "0 auto",
+    fontSize: "11px",
+    lineHeight: "15px",
+    whiteSpace: "pre-line",
   }}
 >
-  <span
-    style={{
-      display: "block",
-      fontSize: "12px",
-      lineHeight: "11px",
-      whiteSpace: "normal",
-      wordBreak: "break-word",
-    }}
-  >
-    {item.name}
-  </span>
+  {item.name.replace("-", "-\n")}
 </Form.Label>
-
         </Container>
       </div>
     ));
