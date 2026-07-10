@@ -123,9 +123,22 @@ useEffect(() => {
             />
           )}
 
-          <Form.Label className="mt-1 bold">
+          {/* <Form.Label className="mt-1 bold">
             <span className=" fs5 assistant-font">{item.name}</span>
-          </Form.Label>
+          </Form.Label> */}
+          <Form.Label
+  className="mt-1 bold"
+  style={{
+    whiteSpace: "normal",
+    wordBreak: "break-word",
+    lineHeight: "1.2rem",
+    minHeight: "2.4rem",
+    textAlign: "center",
+    fontSize: "14px",
+  }}
+>
+  {item.name}
+</Form.Label>
         </Container>
       </div>
     ));
