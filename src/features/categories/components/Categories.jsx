@@ -141,7 +141,7 @@ function Categories({ searchTerm }) {
   <span
     style={{
       display: "block",
-      fontSize: "8px",
+      fontSize: "10px",
       lineHeight: "10px",
       whiteSpace: "normal",
       wordBreak: "break-word",
