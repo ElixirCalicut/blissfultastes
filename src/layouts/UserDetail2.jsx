@@ -157,7 +157,7 @@ function UserDetail2() {
   const validateForm = (formData, type, error) => {
     let err = false;
     // const phoneRegex = /^\d{10}$/;
-    const phoneRegex = /^\d{9}$/;
+    const phoneRegex = /^\d{8}$/;
     //const phoneRegex = /^(7|9)\d{7}$/;
     // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let dineinErrors = {};
@@ -180,7 +180,7 @@ function UserDetail2() {
           if (!phoneRegex.test(formData.phone)) {
             err = true;
             dineinErrors.phone =
-              "Number should with 9 digits";
+              "Number should with 8 digits";
             phoneDinRef.current.focus();
           }
         
@@ -201,7 +201,7 @@ function UserDetail2() {
           if (!phoneRegex.test(formData.phone)) {
             err = true;
             takeawayErrors.phone =
-              "Number should with 9 digits";
+              "Number should with 8 digits";
             phoneTakRef.current.focus();
           }
         
@@ -216,7 +216,7 @@ function UserDetail2() {
         if (!phoneRegex.test(formData.phone)) {
           err = true;
           deliveryErrors.phone =
-            "Number should with 9 digits";
+            "Number should with 8 digits";
           phoneRef.current.focus();
         
        
@@ -447,7 +447,7 @@ function UserDetail2() {
                         {dineinErrors.phone}
                       </Form.Control.Feedback>
                       <Form.Text className="text-muted">
-                        Number should with 9 digits
+                        Number should with 8 digits
                       </Form.Text>
                     </Form.Group>
 
@@ -551,7 +551,7 @@ function UserDetail2() {
                         {takeawayErrors.phone}
                       </Form.Control.Feedback>
                       <Form.Text className="text-muted">
-              Number should with 9 digits
+              Number should with 8 digits
                       </Form.Text>
                     </Form.Group>
 
@@ -659,7 +659,7 @@ function UserDetail2() {
                         {deliveryErrors.phone}
                       </Form.Control.Feedback>
                       <Form.Text className="text-muted">
-                      Number should with 9 digits
+                      Number should with 8 digits
                       </Form.Text>
                     </Form.Group>
 
