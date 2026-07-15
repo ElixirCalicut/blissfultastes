@@ -431,7 +431,7 @@ function UserDetail2() {
                       <Form.Label>Mobile Number</Form.Label>
                       <InputGroup>
                         <InputGroup.Text className="bg-danger  text-white">
-                          +971
+                          +974
                         </InputGroup.Text>
                         <Form.Control
                           type="text"
@@ -535,7 +535,7 @@ function UserDetail2() {
                       <Form.Label>Mobile Number</Form.Label>
                       <InputGroup>
                         <InputGroup.Text className="bg-danger text-white">
-                          +971
+                          +974
                         </InputGroup.Text>
                         <Form.Control
                           type="text"
@@ -643,7 +643,7 @@ function UserDetail2() {
                       <Form.Label>Mobile Number</Form.Label>
                       <InputGroup>
                         <InputGroup.Text className="bg-danger text-white">
-                          +971
+                          +974
                         </InputGroup.Text>
                         <Form.Control
                           type="text"
