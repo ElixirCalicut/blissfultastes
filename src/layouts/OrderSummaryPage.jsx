@@ -192,22 +192,22 @@ function OrderSummaryPage() {
             <Card.Body>
               <Row className="mb-2 ">
                 <Col className="fw-bold  fs-6" xs={8}>
-                  Total Before VAT
+                  Total
                 </Col>
                 <Col xs={4} className="text-end">
                   <div className="text-danger fs-6" >
                     {" "}
                     <CurrencyDisplay
-                      amount={calculateTotalPrice() - calculateVATPercent()}
+                      amount={calculateTotalPrice()}
                     />
                   </div>
                 </Col>
               </Row>
               <Row className="fw-bold ">
                 <Col className="fw-bold  fs-6" xs={8}>
-                VAT Incl.(
+                {/* VAT Incl.(
   {settingdetails.tax_percentage ?? 5}
-)%
+)% */}
                   {/* VAT Incl.(
                   {settingdetails.tax_percentage
                     ? settingdetails.tax_percentage
@@ -215,10 +215,10 @@ function OrderSummaryPage() {
                   )% */}
                 </Col>
                 <Col xs={4} className="text-end text-danger fs-6">
-                  <div>
+                  {/* <div>
                     {" "}
                     <CurrencyDisplay amount={calculateVATPercent()} />
-                  </div>
+                  </div> */}
                 </Col>
               </Row>
 
